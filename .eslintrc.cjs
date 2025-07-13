@@ -1,15 +1,11 @@
 /* eslint-env node */
 // @ts-check
-const reactPlugin = require("eslint-plugin-react");
-const typescriptEslintPlugin = require("@typescript-eslint/eslint-plugin");
-const jestPlugin = require("eslint-plugin-jest");
 
 /** @type {import("eslint").Linter.Config} */
 const config = {
   parser: "@typescript-eslint/parser",
   ignorePatterns: ["**/*.css.d.ts", "dist", "build"],
   plugins: ["react", "@typescript-eslint", "jest"],
-  // plugins: [reactPlugin, typescriptEslintPlugin, jestPlugin],
   extends: [
     "plugin:jest/recommended",
     "eslint:recommended",
@@ -21,7 +17,7 @@ const config = {
   ],
   settings: {
     react: {
-      version: "detect" // React version. "detect" automatically picks the version you have installed.
+      version: "detect"
     }
   },
   rules: {
