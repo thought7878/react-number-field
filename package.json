@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Customizable Number Field for React",
   "author": "Andi <io@gmail.com>",
-  "homepage": "https://daypicker.dev",
+  "homepage": "https://react-number-field.dev",
   "packageManager": "pnpm@9.15.9",
   "engines": {
     "node": ">=18"
@@ -11,10 +11,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gpbl/react-day-picker"
+    "url": "https://github.com/gpbl/react-number-field"
   },
   "bugs": {
-    "url": "https://github.com/gpbl/react-day-picker/issues"
+    "url": "https://github.com/gpbl/react-number-field/issues"
   },
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,9 @@
     "build:cjs": "tsc --project tsconfig-cjs.json && echo '{ \"type\": \"commonjs\" }' > dist/cjs/package.json",
     "build:esm": "tsc --project tsconfig-esm.json",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
-    "typecheck-watch": "tsc --project ./tsconfig.json --noEmit --watch"
+    "typecheck-watch": "tsc --project ./tsconfig.json --noEmit --watch",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "devDependencies": {
@@ -40,8 +42,8 @@
     "@types/node": "^22.14.1",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
-    "@typescript-eslint/eslint-plugin": "^8.29.1",
-    "@typescript-eslint/parser": "^8.29.1",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.2",
     "eslint-import-resolver-typescript": "^3.10.0",

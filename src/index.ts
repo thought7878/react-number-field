@@ -3,4 +3,6 @@ const index = () => {
   return a;
 };
 
+const t = 2;
+
 export default index;
