@@ -3,6 +3,7 @@ const index = () => {
   return a;
 };
 
-const t = 2;
+// const t = 2;
+// const e = 2;
 
 export default index;
