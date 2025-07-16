@@ -1,0 +1,7 @@
+##!/bin/sh
+#. "$(dirname "$0")/_/husky.sh"
+
+# 运行 lint-staged，它会自动检测 .lintstagedrc.js
+npx lint-staged
+
+# pnpm run format && pnpm run lint
