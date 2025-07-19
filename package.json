@@ -26,7 +26,9 @@
     "typecheck-watch": "tsc --project ./tsconfig.json --noEmit --watch",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "cz": "cz"
+    "cz": "cz",
+    "test": "jest --selectProjects src",
+    "test-watch": "jest --watch"
   },
   "keywords": [],
   "devDependencies": {
